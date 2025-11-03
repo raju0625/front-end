@@ -1,7 +1,7 @@
 // API Base URL - automatically detects environment
 const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? ''  // Use relative URLs for local development
-  : 'https://your-backend.onrender.com';  // Replace with your backend URL
+  : 'https://backend-tghd.onrender.com';  // Replace with your backend URL
 
 async function postJSON(url, data) {
   // Use full URL if API_BASE_URL is set, otherwise use relative
@@ -68,5 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
 
 
